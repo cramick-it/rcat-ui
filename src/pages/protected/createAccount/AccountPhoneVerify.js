@@ -155,12 +155,6 @@ class AccountPhoneVerify extends Component {
                     </fieldset>
 
                     <div className="pb4">
-                        <TextButton
-                            name="back"
-                            buttonText="Back"
-                            theme="dark"
-                            onClick={this.backToSignupPhone}
-                        />
                         <Button
                             name="continue"
                             buttonText="Continue"
@@ -168,10 +162,14 @@ class AccountPhoneVerify extends Component {
                             onClick={this.submitForm}
                         />
                     </div>
-
-                    <p className="f6 white lh-copy">Didn’t receive a text?
-                        <a onClick={this.onResend} className="f6 white underline pointer">
-                            Click here to resend.</a></p>
+                    <p className="f6 white lh-copy">Didn’t receive a text?</p>
+                    <text onClick={this.onResend} className="f6 white underline pointer">
+                        Click here to resend</text>
+                    <span className="f6 white lh-copy">or</span>
+                    <text
+                        className="f6 white underline pointer"
+                        onClick={this.backToSignupPhone}
+                    >Change phone number</text>
                 </div>
                 {this.state.errorModal ?
                     <ErrorModal
