@@ -163,13 +163,13 @@ class AccountPhoneVerify extends Component {
                         />
                     </div>
                     <p className="f6 white lh-copy">Didn’t receive a text?</p>
-                    <text onClick={this.onResend} className="f6 white underline pointer">
-                        Click here to resend</text>
+                    <small onClick={this.onResend} className="f6 white underline pointer">
+                        Click here to resend</small>
                     <span className="f6 white lh-copy">or</span>
-                    <text
+                    <small
                         className="f6 white underline pointer"
                         onClick={this.backToSignupPhone}
-                    >Change phone number</text>
+                    >Change phone number</small>
                 </div>
                 {this.state.errorModal ?
                     <ErrorModal
